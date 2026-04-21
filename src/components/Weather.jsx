@@ -139,7 +139,7 @@ const Weather = () => {
       <div className="weather-card">
         <div className="weather-hero">
           <div>
-            <h1>Weather Pulse</h1>
+            <h1>StormEye</h1>
             <p>{summary}</p>
           </div>
           <div className="weather-search">
@@ -209,3 +209,4 @@ const Weather = () => {
 };
 
 export default Weather;
+
