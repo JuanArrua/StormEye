@@ -128,7 +128,7 @@ const Weather = () => {
 
   const summary = useMemo(() => {
     if (!weatherData) {
-      return 'Consulta el clima actual de cualquier ciudad sin exponer claves privadas.';
+      return 'Consulta el clima actual de cualquier ciudad en una interfaz clara y moderna.';
     }
 
     return `${weatherData.description} durante el ${weatherData.dayPeriod.toLowerCase()} en ${weatherData.location}.`;
@@ -139,7 +139,6 @@ const Weather = () => {
       <div className="weather-card">
         <div className="weather-hero">
           <div>
-            <span className="weather-badge">Seguro para web</span>
             <h1>Weather Pulse</h1>
             <p>{summary}</p>
           </div>
@@ -201,12 +200,6 @@ const Weather = () => {
                 <span>Viento</span>
                 <strong>{weatherData ? `${weatherData.windSpeed} km/h` : '--'}</strong>
               </div>
-            </article>
-
-            <article className="metric-card metric-note">
-              <span className="metric-note-label">Publicacion segura</span>
-              <strong>Sin API keys expuestas</strong>
-              <p>La app consume servicios meteorologicos publicos, por lo que queda apta para GitHub y deploy web sin secretos.</p>
             </article>
           </div>
         </div>
